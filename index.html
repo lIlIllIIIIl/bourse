@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Appli bourse</title>
+	<link rel="stylesheet" href="./styles/main.css">
+	
+</head>
+<body>
+	<section class="flex">
+		<div class="popup_add">
+			<h2>Nouvelle action</h2>
+			<form action="" method="get" class="ff">
+				<div>
+					<label for="price">Prix : </label>
+					<input type="number" name="price" class="form_price">
+				</div>
+				<div>
+					<label for="rev">Revient : </label>
+					<input type="number" name="rev" class="form_rev">
+				</div>
+				<div>
+					<label for="qt">Quantité : </label>
+					<input type="number" name="qt" id="form_qt">
+				</div>
+				<div>
+					<label for="type">Type : </label>
+					<select type="text" name="type" class="form_type">
+						<option value="option1">option1</option>
+						<option value="option2">option2</option>
+						<option value="option3">option3</option>
+					</select>
+				</div>
+				<div>
+					<input type="submit" value="Ajouter action" onclick="getValue();">
+				</div>
+
+			</form>
+			<!-- <span>Prix</span>
+			<span>Revient</span>
+			<span>Quantité</span>
+			<span>Type</span> -->
+		</div>
+		<div class="">
+			<table>
+				<thead>
+					<tr>
+						<td><h2>Actions</h2></td>
+						<td><h2>??</h2></td>
+						<td><h2>Delta veille</h2></td>
+						<td><h2>Actu</h2></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>B</td>
+						<td>C</td>
+						<td>D</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="./scripts/app.js"></script>
+</body>
+</html>

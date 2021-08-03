@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	background: #484848;
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+table{
+	width: 100%;
+}
+table, td{
+	/* border:1px solid #ffffff; */
+	border:1px solid #ffffff;
+	text-align: center;
+	width: 50vw;
+}
+
+.popup_add{
+	/* background: red; */
+	width: 50vw;
+	height: 100vh;
+}
+form.ff{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+}
+
+.actual_actions{
+	display: none;
+}
+
+label{
+	display: inline-block;
+	width: 135px;
+	margin: 0 0 10px 0;
+}
+
+button{
+	background: #000000;
+	color: #ffffff;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	border-radius: 5%;
+}
+button.shButton{
+	margin-top: 2em;
+}
+.shButton:hover{
+	cursor: pointer;
+	background: #ffffff;
+	color: #000000;
+	transition-duration: 0.5s;
+}
