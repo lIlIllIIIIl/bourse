@@ -1,8 +1,16 @@
 const page = document.querySelector("body")
+// 
 const list = page.querySelector(".actual_actions")
 const shButton = page.querySelector(".shButton")
+// 
+const listSell = page.querySelector(".actual_actions_sell")
+const shButtonSell = page.querySelector(".shButtonSell")
+// 
 const a = page.querySelectorAll(".colorCh")
-console.log(a);
+//
+const droite = page.querySelector(".droite")
+const gauche = page.querySelector(".gauche")
+const tools = droite.querySelector(".buttonTools")
 
 
 function showActions(){
@@ -17,10 +25,35 @@ function showActions(){
     }
 }
 
-for (i in a){
-    if (a[i].textContent < 0){
-        a[i].style.background = "red";
+function showActionsSell(){
+    if (shButtonSell.classList[1] == "show"){
+        listSell.style.display = "block"
+        shButtonSell.textContent = "Cacher mes actions vendues"
+        shButtonSell.classList.replace("show", "hide")
     } else {
-        a[i].style.background = "green";
+        listSell.style.display = "none"
+        shButtonSell.textContent = "Afficher mes actions vendues"
+        shButtonSell.classList.replace("hide", "show")
+    }
+}
+
+for (i in a){
+    // console.log(a[i].textContent);
+    if (a[i].textContent){
+        if (a[i].textContent.includes('-')){
+            a[i].style.background = "red";
+        } else {
+            a[i].style.background = "green";
+        }
+    }
+}
+
+function showTools(){
+    if (tools.classList[1] == "unactive"){
+        tools.classList.replace("unactive", "active")
+        gauche.style.display="none"
+    } else if(tools.classList[1] == "active"){
+        tools.classList.replace("active", "unactive")
+        gauche.style.display="block"
     }
 }

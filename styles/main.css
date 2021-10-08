@@ -1,8 +1,47 @@
 body{
 	margin: 0;
-	background: #484848;
-	color: #ffffff;
+	padding: 0;
+	background: #181818;
+	color: #f0f0f0;
 	font-size: 1.2em;
+}
+
+.page{
+	/* width: 100vw; */
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Lato', sans-serif;
+}
+.gauche{
+	width: 30vw;
+}
+.gauche .filter_label{
+	width: 300px;
+}
+.gauche a{
+	display: inline-block;
+}
+.gauche a:hover{
+	text-decoration: underline;
+}
+.reload{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.reload:hover{
+	color: red;
+	transition-duration: 0.5s;
+}
+.search_key{
+	width: auto;
+}
+
+.droite{
+	width: 70vw;
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-around; */
 }
 
 table{
@@ -13,14 +52,9 @@ table, td{
 	border:1px solid #ffffff;
 	text-align: center;
 	width: 50vw;
+	height: 100px;
 }
-
-.popup_add{
-	/* background: red; */
-	width: 50vw;
-	height: 100vh;
-}
-form.ff{
+form.form_new_action{
 	display: flex;
 	flex-direction: column;
 }
@@ -30,13 +64,9 @@ form.ff{
 	flex-direction: row;
 }
 
-.actual_actions{
-	display: none;
-}
-
 label{
 	display: inline-block;
-	width: 135px;
+	width: 150px;
 	margin: 0 0 10px 0;
 }
 
@@ -49,10 +79,63 @@ button{
 	font-size: 1em;
 	border-radius: 5%;
 }
+/*  */
+.actual_actions{
+	display: none;
+}
 button.shButton{
 	margin-top: 2em;
 }
 .shButton:hover{
+	cursor: pointer;
+	background: #ffffff;
+	color: #000000;
+	transition-duration: 0.5s;
+}
+/*  */
+.actual_actions_sell{
+	display: none;
+}
+button.shButtonSell{
+	margin-top: 2em;
+}
+.shButtonSell:hover{
+	cursor: pointer;
+	background: #ffffff;
+	color: #000000;
+	transition-duration: 0.5s;
+}
+/*  */
+.actions_tab{
+	width: 70vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.del_action:hover{
+	cursor: pointer;
+	background-color: red;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.blank{
+	width: 100%;
+	height: 100px;
+}
+
+.buttonTools{
+	position: absolute;
+	top: 5%;
+	right: 1%;
+}
+
+.buttonTools:hover{
 	cursor: pointer;
 	background: #ffffff;
 	color: #000000;
