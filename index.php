@@ -153,9 +153,11 @@ $filtreFilter = $filter ?? filter_input(INPUT_COOKIE, "filter");
 
 		<section class=droite>
 			<div class="blank"></div>
-			<button type="button" class="buttonTools unactive" onclick="showTools()">
-				Cacher les outils
-			</button>
+			<div>
+				<button type="button" class="buttonTools unactive shTools" onclick="showTools()">
+					Cacher les outils
+				</button>
+			</div>
 			<div class="actions_tab">
 				<table>
 					<thead>

@@ -14,7 +14,7 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 .gauche{
-	width: 30vw;
+	width: 25vw;
 }
 .gauche .filter_label{
 	width: 300px;
@@ -53,6 +53,7 @@ table, td{
 	text-align: center;
 	width: 50vw;
 	height: 100px;
+	/* max-width: 150px; */
 }
 form.form_new_action{
 	display: flex;
@@ -132,7 +133,7 @@ a{
 .buttonTools{
 	position: absolute;
 	top: 5%;
-	right: 1%;
+	left: 20%;
 }
 
 .buttonTools:hover{
